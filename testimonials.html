@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Client Testimonials | Adwala Experts — Real Reviews from Real Clients</title>
+  <meta name="description" content="Read real client testimonials for Adwala Experts. See what our clients say about our digital marketing, web development, and SEO services.">
+  <link rel="icon" type="image/jpeg" href="assets/images/adwala-logo.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/pages.css">
+  <style>
+    .testimonials-full-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 28px;
+      margin-bottom: 60px;
+    }
+    .testimonial-full-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-card);
+      border-radius: var(--radius-lg);
+      padding: 36px 30px 30px;
+      backdrop-filter: blur(14px);
+      transition: all var(--transition-smooth);
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+      overflow: hidden;
+    }
+    .testimonial-full-card::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      height: 3px;
+      background: linear-gradient(90deg, var(--amber-primary), var(--orange-accent), transparent);
+      opacity: 0;
+      transition: opacity var(--transition-fast);
+    }
+    .testimonial-full-card:hover {
+      border-color: var(--border-amber);
+      transform: translateY(-6px);
+      box-shadow: 0 20px 50px -15px rgba(0,0,0,0.7), var(--shadow-amber);
+    }
+    .testimonial-full-card:hover::before { opacity: 1; }
+    .t-stars { display: flex; gap: 4px; }
+    .t-stars svg { width: 19px; height: 19px; filter: drop-shadow(0 0 4px rgba(245,158,11,0.5)); }
+    .t-quote-icon { position: absolute; top: 22px; right: 24px; opacity: 0.55; }
+    .t-quote-icon svg { width: 38px; height: 38px; }
+    .t-text { font-size: 0.97rem; color: #d1d5db; line-height: 1.8; font-style: italic; flex-grow: 1; }
+    .t-author { display: flex; align-items: center; gap: 15px; margin-top: 8px; padding-top: 18px; border-top: 1px solid var(--border-subtle); }
+    .t-avatar-img { width: 52px; height: 52px; border-radius: 50%; object-fit: cover; object-position: top; flex-shrink: 0; border: 2px solid rgba(245,158,11,0.4); box-shadow: 0 4px 14px rgba(0,0,0,0.5); }
+    .t-avatar-init { width: 52px; height: 52px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 800; font-size: 1rem; color: #000; flex-shrink: 0; box-shadow: 0 4px 14px rgba(0,0,0,0.4); }
+    .t-av-1 { background: linear-gradient(135deg, #f59e0b, #ea580c); }
+    .t-av-2 { background: linear-gradient(135deg, #8b5cf6, #a855f7); }
+    .t-av-3 { background: linear-gradient(135deg, #10b981, #059669); }
+    .t-name { font-weight: 700; font-size: 1.05rem; color: var(--text-white); margin-bottom: 3px; }
+    .t-role { font-size: 0.83rem; color: var(--amber-primary); font-weight: 600; }
+    @media (max-width: 1120px) { .testimonials-full-grid { grid-template-columns: repeat(2, 1fr); } }
+    @media (max-width: 640px) { .testimonials-full-grid { grid-template-columns: 1fr; } }
+  </style>
+</head>
+<body>
+  </div>
+
+  <header class="navbar" id="navbar">
+    <div class="container navbar-inner">
+      <a href="index.html" class="brand-logo-link" aria-label="Adwala Experts Home">
+        <img src="assets/images/adwala-logo.jpg" alt="Adwala Experts Logo" class="brand-logo-img">
+        <span class="brand-logo-text">Adwala <span>Experts</span></span>
+      </a>
+      <nav aria-label="Main Navigation">
+        <ul class="nav-menu">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="services.html" class="nav-link">Services</a></li>
+          <li><a href="portfolio.html" class="nav-link">Portfolio</a></li>
+          <li><a href="process.html" class="nav-link">Process</a></li>
+          <li><a href="testimonials.html" class="nav-link active">Testimonials</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+          <li class="nav-menu-cta" style="display:none;"><a href="contact.html" class="btn btn-primary" style="width:100%;">Get Started</a></li>
+        </ul>
+      </nav>
+      <div class="navbar-actions">
+        <a href="contact.html" class="btn btn-primary" id="navGetStarted">
+          <span>Get Started</span>
+          <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+        </a>
+        <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero page-hero-testimonials">
+      <div class="container page-hero-inner">
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+          <a href="index.html">Home</a><span class="breadcrumb-sep">›</span>
+          <span class="breadcrumb-current">Testimonials</span>
+        </nav>
+        <h1 class="page-hero-title">Client <span class="accent">Testimonials</span></h1>
+        <p class="page-hero-sub">Over 50+ satisfied clients worldwide — discover how our data-driven digital strategies and creative engineering have transformed businesses.</p>
+      </div>
+    </section>
+
+    <div style="background: var(--bg-dark); padding: 80px 0;">
+      <div class="container">
+
+        <!-- Stats Bar -->
+        <div class="testimonials-stats-bar" style="margin-bottom:60px;">
+          <div class="tstats-item"><div class="tstats-num counter-item" data-target="50" data-suffix="+">50+</div><div class="tstats-label">Happy Clients</div></div>
+          <div class="tstats-divider"></div>
+          <div class="tstats-item"><div class="tstats-num counter-item" data-target="5.0" data-decimals="1">5.0</div><div class="tstats-label">Average Rating</div></div>
+          <div class="tstats-divider"></div>
+          <div class="tstats-item"><div class="tstats-num counter-item" data-target="100" data-suffix="%">100%</div><div class="tstats-label">Client Satisfaction</div></div>
+          <div class="tstats-divider"></div>
+          <div class="tstats-item"><div class="tstats-num counter-item" data-target="3" data-suffix="x">3x</div><div class="tstats-label">Avg. ROI Delivered</div></div>
+        </div>
+
+        <!-- Testimonials Slider Wrapper -->
+        <div class="testimonials-slider-wrapper" id="testimonialsSlider">
+          <div class="testimonials-track-container">
+            <div class="testimonials-track" id="testimonialsTrack">
+
+          <!-- 1: Ahmed -->
+          <div class="testimonial-full-card">
+            <div class="t-stars">
+              <svg viewBox="0 0 24 24" fill="#f59e0b"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+              <svg viewBox="0 0 24 24" fill="#f59e0b"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+              <svg viewBox="0 0 24 24" fill="#f59e0b"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+              <svg viewBox="0 0 24 24" fill="#f59e0b"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+              <svg viewBox="0 0 24 24" fill="#f59e0b"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+            </div>
+            <div class="t-quote-icon"><svg viewBox="0 0 24 24" fill="none"><path d="M3 21c3 0 7-1 7-8V5c0-1.25-.756-2.017-2-2H4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2 1 0 1 0 1 1v1c0 1-1 2-2 2s-1 .008-1 1.031V20c0 1 0 1 1 1z" fill="rgba(245,158,11,0.2)" stroke="rgba(245,158,11,0.5)" stroke-width="1.5"/><path d="M15 21c3 0 7-1 7-8V5c0-1.25-.757-2.017-2-2h-4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2h.75c0 2.25.25 4-2.75 4v3c0 1 0 1 1 1z" fill="rgba(245,158,11,0.2)" stroke="rgba(245,158,11,0.5)" stroke-width="1.5"/></svg></div>
+            <p class="t-text">"Our Meta Ads campaign delivered a 3x surge in online store sales within just 8 weeks. Adwala Experts are truly exceptional — highly professional, on schedule, and laser-focused on real measurable ROI!"</p>
+            <div class="t-author">
+              <img src="assets/images/avatar-ahmed.jpg" alt="Ahmed Khan" class="t-avatar-img">
+              <div><div class="t-name">Ahmed Khan</div><div class="t-role">E-Commerce Store Owner</div></div>
+            </div>
+          </div>
+
+          <!-- 2: Sara -->
+          <div class="testimonial-full-card">
+            <div class="t-stars">
+              <svg viewBox="0 0 24 24" fill="#f59e0b"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+              <svg viewBox="0 0 24 24" fill="#f59e0b"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+              <svg viewBox="0 0 24 24" fill="#f59e0b"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+              <svg viewBox="0 0 24 24" fill="#f59e0b"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+              <svg viewBox="0 0 24 24" fill="#f59e0b"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+            </div>
+            <div class="t-quote-icon"><svg viewBox="0 0 24 24" fill="none"><path d="M3 21c3 0 7-1 7-8V5c0-1.25-.756-2.017-2-2H4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2 1 0 1 0 1 1v1c0 1-1 2-2 2s-1 .008-1 1.031V20c0 1 0 1 1 1z" fill="rgba(245,158,11,0.2)" stroke="rgba(245,158,11,0.5)" stroke-width="1.5"/><path d="M15 21c3 0 7-1 7-8V5c0-1.25-.757-2.017-2-2h-4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2h.75c0 2.25.25 4-2.75 4v3c0 1 0 1 1 1z" fill="rgba(245,158,11,0.2)" stroke="rgba(245,158,11,0.5)" stroke-width="1.5"/></svg></div>
+            <p class="t-text">"The website development was done with remarkable precision and speed. Our customers constantly praise our modern look and fast checkout. The Google Ads campaigns further multiplied our bookings!"</p>
+            <div class="t-author">
+              <img src="assets/images/avatar-sara.jpg" alt="Sara Malik" class="t-avatar-img">
+              <div><div class="t-name">Sara Malik</div><div class="t-role">Restaurant Business Owner</div></div>
+            </div>
+          </div>
+
+          <!-- 3: Usman -->
+          <div class="testimonial-full-card">
+            <div class="t-stars">
+              <svg viewBox="0 0 24 24" fill="#f59e0b"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+              <svg viewBox="0 0 24 24" fill="#f59e0b"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+              <svg viewBox="0 0 24 24" fill="#f59e0b"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+              <svg viewBox="0 0 24 24" fill="#f59e0b"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+              <svg viewBox="0 0 24 24" fill="#f59e0b"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+            </div>
+            <div class="t-quote-icon"><svg viewBox="0 0 24 24" fill="none"><path d="M3 21c3 0 7-1 7-8V5c0-1.25-.756-2.017-2-2H4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2 1 0 1 0 1 1v1c0 1-1 2-2 2s-1 .008-1 1.031V20c0 1 0 1 1 1z" fill="rgba(245,158,11,0.2)" stroke="rgba(245,158,11,0.5)" stroke-width="1.5"/><path d="M15 21c3 0 7-1 7-8V5c0-1.25-.757-2.017-2-2h-4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2h.75c0 2.25.25 4-2.75 4v3c0 1 0 1 1 1z" fill="rgba(245,158,11,0.2)" stroke="rgba(245,158,11,0.5)" stroke-width="1.5"/></svg></div>
+            <p class="t-text">"Across both social media management and visual branding, Adwala transformed our company identity. Our audience engagement grew 5x in record time. Highly impressed with their creative caliber!"</p>
+            <div class="t-author">
+              <img src="assets/images/avatar-usman.jpg" alt="Usman Raza" class="t-avatar-img">
+              <div><div class="t-name">Usman Raza</div><div class="t-role">Fashion Brand Founder</div></div>
+            </div>
+          </div>
+
+          <!-- 4: Fatima -->
+          <div class="testimonial-full-card">
+            <div class="t-stars">
+              <svg viewBox="0 0 24 24" fill="#f59e0b"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+              <svg viewBox="0 0 24 24" fill="#f59e0b"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+              <svg viewBox="0 0 24 24" fill="#f59e0b"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+              <svg viewBox="0 0 24 24" fill="#f59e0b"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+              <svg viewBox="0 0 24 24" fill="#f59e0b"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+            </div>
+            <div class="t-quote-icon"><svg viewBox="0 0 24 24" fill="none"><path d="M3 21c3 0 7-1 7-8V5c0-1.25-.756-2.017-2-2H4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2 1 0 1 0 1 1v1c0 1-1 2-2 2s-1 .008-1 1.031V20c0 1 0 1 1 1z" fill="rgba(245,158,11,0.2)" stroke="rgba(245,158,11,0.5)" stroke-width="1.5"/><path d="M15 21c3 0 7-1 7-8V5c0-1.25-.757-2.017-2-2h-4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2h.75c0 2.25.25 4-2.75 4v3c0 1 0 1 1 1z" fill="rgba(245,158,11,0.2)" stroke="rgba(245,158,11,0.5)" stroke-width="1.5"/></svg></div>
+            <p class="t-text">"Their blend of technical SEO and targeted email marketing proved phenomenal. Our organic inbound inquiries surged by 200% within 90 days. The best digital partner for high-ticket services."</p>
+            <div class="t-author">
+              <img src="assets/images/avatar-fatima.jpg" alt="Fatima Noor" class="t-avatar-img">
+              <div><div class="t-name">Fatima Noor</div><div class="t-role">Real Estate Agency Manager</div></div>
+            </div>
+          </div>
+
+          <!-- 5: Zain -->
+          <div class="testimonial-full-card">
+            <div class="t-stars">
+              <svg viewBox="0 0 24 24" fill="#f59e0b"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+              <svg viewBox="0 0 24 24" fill="#f59e0b"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+              <svg viewBox="0 0 24 24" fill="#f59e0b"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+              <svg viewBox="0 0 24 24" fill="#f59e0b"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+              <svg viewBox="0 0 24 24" fill="#f59e0b"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+            </div>
+            <div class="t-quote-icon"><svg viewBox="0 0 24 24" fill="none"><path d="M3 21c3 0 7-1 7-8V5c0-1.25-.756-2.017-2-2H4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2 1 0 1 0 1 1v1c0 1-1 2-2 2s-1 .008-1 1.031V20c0 1 0 1 1 1z" fill="rgba(245,158,11,0.2)" stroke="rgba(245,158,11,0.5)" stroke-width="1.5"/><path d="M15 21c3 0 7-1 7-8V5c0-1.25-.757-2.017-2-2h-4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2h.75c0 2.25.25 4-2.75 4v3c0 1 0 1 1 1z" fill="rgba(245,158,11,0.2)" stroke="rgba(245,158,11,0.5)" stroke-width="1.5"/></svg></div>
+            <p class="t-text">"Their AI video generation and custom prompt systems gave us an unbeatable competitive edge. We produce stellar marketing collateral in minutes instead of days. Truly forward-thinking specialists."</p>
+            <div class="t-author">
+              <img src="assets/images/avatar-ahmed.jpg" alt="Zain Abbas" class="t-avatar-img">
+              <div><div class="t-name">Zain Abbas</div><div class="t-role">Tech Startup CEO</div></div>
+            </div>
+          </div>
+
+          <!-- 6: Rimsha -->
+          <div class="testimonial-full-card">
+            <div class="t-stars">
+              <svg viewBox="0 0 24 24" fill="#f59e0b"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+              <svg viewBox="0 0 24 24" fill="#f59e0b"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+              <svg viewBox="0 0 24 24" fill="#f59e0b"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+              <svg viewBox="0 0 24 24" fill="#f59e0b"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+              <svg viewBox="0 0 24 24" fill="#f59e0b"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+            </div>
+            <div class="t-quote-icon"><svg viewBox="0 0 24 24" fill="none"><path d="M3 21c3 0 7-1 7-8V5c0-1.25-.756-2.017-2-2H4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2 1 0 1 0 1 1v1c0 1-1 2-2 2s-1 .008-1 1.031V20c0 1 0 1 1 1z" fill="rgba(245,158,11,0.2)" stroke="rgba(245,158,11,0.5)" stroke-width="1.5"/><path d="M15 21c3 0 7-1 7-8V5c0-1.25-.757-2.017-2-2h-4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2h.75c0 2.25.25 4-2.75 4v3c0 1 0 1 1 1z" fill="rgba(245,158,11,0.2)" stroke="rgba(245,158,11,0.5)" stroke-width="1.5"/></svg></div>
+            <p class="t-text">"From brand strategy to execution, Adwala Experts took total ownership. They consistently delivered far above expectations with transparent updates throughout. Highly recommended!"</p>
+            <div class="t-author">
+              <img src="assets/images/avatar-sara.jpg" alt="Rimsha Hassan" class="t-avatar-img">
+              <div><div class="t-name">Rimsha Hassan</div><div class="t-role">Healthcare Services Director</div></div>
+            </div>
+          </div>
+
+          <!-- 7: Bilal -->
+          <div class="testimonial-full-card">
+            <div class="t-stars">
+              <svg viewBox="0 0 24 24" fill="#f59e0b"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+              <svg viewBox="0 0 24 24" fill="#f59e0b"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+              <svg viewBox="0 0 24 24" fill="#f59e0b"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+              <svg viewBox="0 0 24 24" fill="#f59e0b"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+              <svg viewBox="0 0 24 24" fill="#f59e0b"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+            </div>
+            <div class="t-quote-icon"><svg viewBox="0 0 24 24" fill="none"><path d="M3 21c3 0 7-1 7-8V5c0-1.25-.756-2.017-2-2H4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2 1 0 1 0 1 1v1c0 1-1 2-2 2s-1 .008-1 1.031V20c0 1 0 1 1 1z" fill="rgba(245,158,11,0.2)" stroke="rgba(245,158,11,0.5)" stroke-width="1.5"/><path d="M15 21c3 0 7-1 7-8V5c0-1.25-.757-2.017-2-2h-4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2h.75c0 2.25.25 4-2.75 4v3c0 1 0 1 1 1z" fill="rgba(245,158,11,0.2)" stroke="rgba(245,158,11,0.5)" stroke-width="1.5"/></svg></div>
+            <p class="t-text">"They managed our apparel brand's Instagram seamlessly. Within 6 months our following grew from 2,000 to over 25,000 with a sustained 12% engagement rate. Exceptional results and work ethic!"</p>
+            <div class="t-author">
+              <img src="assets/images/avatar-usman.jpg" alt="Bilal Anwar" class="t-avatar-img">
+              <div><div class="t-name">Bilal Anwar</div><div class="t-role">Apparel Brand Owner</div></div>
+            </div>
+          </div>
+
+          <!-- 8: Hina -->
+          <div class="testimonial-full-card">
+            <div class="t-stars">
+              <svg viewBox="0 0 24 24" fill="#f59e0b"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+              <svg viewBox="0 0 24 24" fill="#f59e0b"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+              <svg viewBox="0 0 24 24" fill="#f59e0b"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+              <svg viewBox="0 0 24 24" fill="#f59e0b"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+              <svg viewBox="0 0 24 24" fill="#f59e0b"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+            </div>
+            <div class="t-quote-icon"><svg viewBox="0 0 24 24" fill="none"><path d="M3 21c3 0 7-1 7-8V5c0-1.25-.756-2.017-2-2H4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2 1 0 1 0 1 1v1c0 1-1 2-2 2s-1 .008-1 1.031V20c0 1 0 1 1 1z" fill="rgba(245,158,11,0.2)" stroke="rgba(245,158,11,0.5)" stroke-width="1.5"/><path d="M15 21c3 0 7-1 7-8V5c0-1.25-.757-2.017-2-2h-4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2h.75c0 2.25.25 4-2.75 4v3c0 1 0 1 1 1z" fill="rgba(245,158,11,0.2)" stroke="rgba(245,158,11,0.5)" stroke-width="1.5"/></svg></div>
+            <p class="t-text">"Both our brand identity design and responsive website were completed by Adwala. The elegance, speed, and affordability blew us away. I recommend them to every entrepreneur without hesitation!"</p>
+            <div class="t-author">
+              <img src="assets/images/avatar-fatima.jpg" alt="Hina Kamran" class="t-avatar-img">
+              <div><div class="t-name">Hina Kamran</div><div class="t-role">Beauty Studio Director</div></div>
+            </div>
+          </div>
+
+          <!-- 9: Omar -->
+          <div class="testimonial-full-card">
+            <div class="t-stars">
+              <svg viewBox="0 0 24 24" fill="#f59e0b"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+              <svg viewBox="0 0 24 24" fill="#f59e0b"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+              <svg viewBox="0 0 24 24" fill="#f59e0b"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+              <svg viewBox="0 0 24 24" fill="#f59e0b"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+              <svg viewBox="0 0 24 24" fill="#f59e0b"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+            </div>
+            <div class="t-quote-icon"><svg viewBox="0 0 24 24" fill="none"><path d="M3 21c3 0 7-1 7-8V5c0-1.25-.756-2.017-2-2H4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2 1 0 1 0 1 1v1c0 1-1 2-2 2s-1 .008-1 1.031V20c0 1 0 1 1 1z" fill="rgba(245,158,11,0.2)" stroke="rgba(245,158,11,0.5)" stroke-width="1.5"/><path d="M15 21c3 0 7-1 7-8V5c0-1.25-.757-2.017-2-2h-4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2h.75c0 2.25.25 4-2.75 4v3c0 1 0 1 1 1z" fill="rgba(245,158,11,0.2)" stroke="rgba(245,158,11,0.5)" stroke-width="1.5"/></svg></div>
+            <p class="t-text">"Google Ads managed by Adwala delivered a continuous stream of qualified patient inquiries for our clinic. Transparent reporting, zero wasted spend, and dependable client support throughout."</p>
+            <div class="t-author">
+              <img src="assets/images/avatar-ahmed.jpg" alt="Omar Shaikh" class="t-avatar-img">
+              <div><div class="t-name">Omar Shaikh</div><div class="t-role">Medical Clinic Director</div></div>
+            </div>
+          </div>
+          </div>
+
+          <!-- Side Slider Buttons -->
+          <button class="slider-btn slider-btn-prev" id="sliderPrevBtn" aria-label="Previous testimonial" title="Previous">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"></polyline></svg>
+          </button>
+          <button class="slider-btn slider-btn-next" id="sliderNextBtn" aria-label="Next testimonial" title="Next">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
+          </button>
+
+          <!-- Bottom Indicators -->
+          <div class="slider-indicators" id="sliderIndicators"></div>
+        </div>
+
+        <!-- CTA -->
+        <div class="page-cta-banner">
+          <h2>Ready to Scale Your Business?</h2>
+          <p>Join over 50+ thriving brands achieving sustainable, profitable growth with Adwala Experts. Request your free consultation today.</p>
+          <div class="page-cta-actions">
+            <a href="contact.html" class="btn btn-primary">Get Free Consultation</a>
+            <a href="services.html" class="btn btn-secondary">View Our Services</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand-col">
+          <a href="index.html" class="brand-logo-link" style="margin-bottom:16px;">
+            <img src="assets/images/adwala-logo.jpg" alt="Adwala Experts Logo" class="brand-logo-img">
+            <span class="brand-logo-text">Adwala <span>Experts</span></span>
+          </a>
+          <p class="footer-desc">Digital marketing, web development, and modern technology solutions for growing businesses.</p>
+        </div>
+        <div>
+          <h4 class="footer-col-title">Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="index.html" class="footer-link">Home</a></li>
+            <li><a href="about.html" class="footer-link">About</a></li>
+            <li><a href="services.html" class="footer-link">Services</a></li>
+            <li><a href="portfolio.html" class="footer-link">Portfolio</a></li>
+            <li><a href="testimonials.html" class="footer-link">Testimonials</a></li>
+            <li><a href="contact.html" class="footer-link">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer-col-title">Contact</h4>
+          <div class="footer-contact-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+            <a href="mailto:mshafqat6552@gmail.com" class="footer-link">mshafqat6552@gmail.com</a>
+          </div>
+          <div class="footer-contact-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+            <a href="https://wa.me/923316318530" target="_blank" rel="noopener noreferrer" class="footer-link">03316318530 (WhatsApp)</a>
+          </div>
+        </div>
+        <div>
+          <h4 class="footer-col-title">Social</h4>
+          <div class="social-links-strip">
+            <a href="https://www.facebook.com/adwalaexpert.pk" target="_blank" rel="noopener noreferrer" class="social-badge-btn" title="Facebook">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+              <span>Facebook</span>
+            </a>
+            <a href="https://www.instagram.com/adwalaexperts.pk" target="_blank" rel="noopener noreferrer" class="social-badge-btn" title="Instagram">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+              <span>Instagram</span>
+            </a>
+            <a href="mailto:mshafqat6552@gmail.com" class="social-badge-btn" title="Email Us">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+              <span>Email</span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p class="footer-copy">© 2026 Adwala Experts. All rights reserved.</p>
+        <p style="color: var(--text-dim); font-size: 0.82rem;">Strategy • Marketing • Technology</p>
+      </div>
+    </div>
+  </footer>
+
+  <div class="floating-contact-stack">
+    <a href="https://wa.me/923316318530" target="_blank" rel="noopener noreferrer" class="floating-contact-btn floating-whatsapp-btn" title="WhatsApp">
+      <svg class="floating-icon" viewBox="0 0 24 24"><path fill="currentColor" d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+      <span class="floating-tooltip">WhatsApp: 03316318530</span>
+    </a>
+    <a href="mailto:mshafqat6552@gmail.com" class="floating-contact-btn floating-email-btn" title="Email">
+      <svg class="floating-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+      <span class="floating-tooltip">mshafqat6552@gmail.com</span>
+    </a>
+  </div>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,386 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us | Adwala Experts — Get Free Consultation</title>
+  <meta name="description" content="Contact Adwala Experts for free digital marketing consultation. WhatsApp, email, or fill out the contact form. Fast response guaranteed.">
+  <link rel="icon" type="image/jpeg" href="assets/images/adwala-logo.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/pages.css">
+  <style>
+    .contact-page-grid {
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr;
+      gap: 60px;
+      align-items: start;
+    }
+    .contact-methods { display: flex; flex-direction: column; gap: 20px; margin-bottom: 40px; }
+    .contact-method-card {
+      display: flex; align-items: flex-start; gap: 18px;
+      background: var(--bg-card); border: 1px solid var(--border-card);
+      border-radius: var(--radius-md); padding: 24px;
+      transition: all var(--transition-fast);
+    }
+    .contact-method-card:hover { border-color: rgba(245,158,11,0.3); transform: translateX(5px); }
+    .contact-method-icon {
+      width: 50px; height: 50px; border-radius: var(--radius-md);
+      background: rgba(245,158,11,0.12); border: 1px solid rgba(245,158,11,0.25);
+      display: flex; align-items: center; justify-content: center;
+      color: var(--amber-primary); flex-shrink: 0;
+    }
+    .contact-method-icon svg { width: 22px; height: 22px; }
+    .contact-method-title { font-weight: 700; color: var(--text-white); margin-bottom: 4px; font-size: 1rem; }
+    .contact-method-val { color: var(--amber-primary); font-size: 1rem; font-weight: 600; word-break: break-all; }
+    .contact-method-sub { color: var(--text-muted); font-size: 0.82rem; margin-top: 3px; }
+    .contact-form-card {
+      background: var(--bg-card); border: 1px solid var(--border-card);
+      border-radius: var(--radius-lg); padding: 40px; backdrop-filter: blur(14px);
+    }
+    .contact-form-title { font-size: 1.6rem; font-weight: 800; color: var(--text-white); margin-bottom: 6px; }
+    .contact-form-sub { color: var(--text-muted); font-size: 0.95rem; margin-bottom: 32px; line-height: 1.6; }
+    .form-group { margin-bottom: 22px; }
+    .form-label { display: block; font-size: 0.88rem; font-weight: 600; color: var(--text-light); margin-bottom: 8px; letter-spacing: 0.03em; }
+    .form-input, .form-select, .form-textarea {
+      width: 100%; background: rgba(255,255,255,0.04);
+      border: 1px solid rgba(255,255,255,0.12); border-radius: var(--radius-md);
+      padding: 14px 18px; font-family: var(--font-heading); font-size: 0.95rem;
+      color: var(--text-white); transition: all var(--transition-fast);
+      outline: none; appearance: none;
+    }
+    .form-input::placeholder, .form-textarea::placeholder { color: var(--text-dim); }
+    .form-input:focus, .form-select:focus, .form-textarea:focus {
+      border-color: rgba(245,158,11,0.5); background: rgba(245,158,11,0.04);
+      box-shadow: 0 0 0 3px rgba(245,158,11,0.12);
+    }
+    .form-select option { background: #1a1d22; color: var(--text-white); }
+    .form-textarea { resize: vertical; min-height: 130px; }
+    .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+    .contact-cta-strip {
+      display: flex; gap: 16px; flex-wrap: wrap; margin-bottom: 50px;
+    }
+    .contact-cta-card {
+      flex: 1; min-width: 200px;
+      background: var(--bg-card); border: 1px solid rgba(245,158,11,0.2);
+      border-radius: var(--radius-md); padding: 24px 20px;
+      text-align: center; transition: all var(--transition-fast);
+      text-decoration: none;
+    }
+    .contact-cta-card:hover { border-color: var(--amber-primary); background: rgba(245,158,11,0.08); transform: translateY(-3px); }
+    .contact-cta-emoji { font-size: 2rem; margin-bottom: 10px; }
+    .contact-cta-title { font-weight: 700; color: var(--text-white); margin-bottom: 4px; }
+    .contact-cta-desc { font-size: 0.85rem; color: var(--text-muted); }
+    @media (max-width: 992px) { .contact-page-grid { grid-template-columns: 1fr; } }
+    @media (max-width: 640px) { .form-row { grid-template-columns: 1fr; } .contact-form-card { padding: 26px 20px; } }
+  </style>
+</head>
+<body>
+  </div>
+
+  <header class="navbar" id="navbar">
+    <div class="container navbar-inner">
+      <a href="index.html" class="brand-logo-link" aria-label="Adwala Experts Home">
+        <img src="assets/images/adwala-logo.jpg" alt="Adwala Experts Logo" class="brand-logo-img">
+        <span class="brand-logo-text">Adwala <span>Experts</span></span>
+      </a>
+      <nav aria-label="Main Navigation">
+        <ul class="nav-menu">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="services.html" class="nav-link">Services</a></li>
+          <li><a href="portfolio.html" class="nav-link">Portfolio</a></li>
+          <li><a href="process.html" class="nav-link">Process</a></li>
+          <li><a href="testimonials.html" class="nav-link">Testimonials</a></li>
+          <li><a href="contact.html" class="nav-link active">Contact</a></li>
+          <li class="nav-menu-cta" style="display:none;"><a href="contact.html" class="btn btn-primary" style="width:100%;">Get Started</a></li>
+        </ul>
+      </nav>
+      <div class="navbar-actions">
+        <a href="contact.html" class="btn btn-primary" id="navGetStarted">
+          <span>Get Started</span>
+          <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+        </a>
+        <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero page-hero-contact">
+      <div class="container page-hero-inner">
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+          <a href="index.html">Home</a><span class="breadcrumb-sep">›</span>
+          <span class="breadcrumb-current">Contact</span>
+        </nav>
+        <h1 class="page-hero-title">Get in <span class="accent">Touch</span></h1>
+        <p class="page-hero-sub">Free consultation lein aur apne business ki digital transformation shuru karein. Hum yahan hain aapki madad ke liye.</p>
+      </div>
+    </section>
+
+    <div style="background: var(--bg-dark); padding: 80px 0;">
+      <div class="container">
+
+        <!-- Quick CTA cards -->
+        <div class="contact-cta-strip">
+          <a href="https://wa.me/923316318530" target="_blank" rel="noopener noreferrer" class="contact-cta-card">
+            <div class="contact-cta-emoji">💬</div>
+            <div class="contact-cta-title">WhatsApp</div>
+            <div class="contact-cta-desc">Sabse fast response — usually 5 min mein</div>
+          </a>
+          <a href="mailto:mshafqat6552@gmail.com" class="contact-cta-card">
+            <div class="contact-cta-emoji">📧</div>
+            <div class="contact-cta-title">Email Us</div>
+            <div class="contact-cta-desc">Detailed inquiries ke liye email karein</div>
+          </a>
+          <a href="https://www.facebook.com/adwalaexpert.pk" target="_blank" rel="noopener noreferrer" class="contact-cta-card">
+            <div class="contact-cta-emoji">📘</div>
+            <div class="contact-cta-title">Facebook</div>
+            <div class="contact-cta-desc">Hamari Facebook page pe message karein</div>
+          </a>
+          <a href="https://www.instagram.com/adwalaexperts.pk" target="_blank" rel="noopener noreferrer" class="contact-cta-card">
+            <div class="contact-cta-emoji">📸</div>
+            <div class="contact-cta-title">Instagram</div>
+            <div class="contact-cta-desc">DM us on Instagram anytime</div>
+          </a>
+        </div>
+
+        <!-- Main Grid -->
+        <div class="contact-page-grid">
+
+          <!-- Left: Contact Info -->
+          <div>
+            <div class="section-label" style="margin-bottom:14px;">Reach Us Directly</div>
+            <h2 class="section-title" style="font-size: clamp(1.8rem,3.5vw,2.4rem); margin-bottom:24px;">Hamse Rabta <span class="section-title-accent">Karein</span></h2>
+
+            <div class="contact-methods">
+              <div class="contact-method-card">
+                <div class="contact-method-icon">
+                  <svg viewBox="0 0 24 24" fill="#25D366"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+                </div>
+                <div>
+                  <div class="contact-method-title">WhatsApp (Preferred)</div>
+                  <a href="https://wa.me/923316318530" target="_blank" rel="noopener noreferrer" class="contact-method-val">03316318530</a>
+                  <div class="contact-method-sub">Mon–Sat: 9am – 9pm PKT • Usually responds in 5 minutes</div>
+                </div>
+              </div>
+
+              <div class="contact-method-card">
+                <div class="contact-method-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                </div>
+                <div>
+                  <div class="contact-method-title">Email</div>
+                  <a href="mailto:mshafqat6552@gmail.com" class="contact-method-val">mshafqat6552@gmail.com</a>
+                  <div class="contact-method-sub">Detailed queries ke liye • Reply within 24 hours</div>
+                </div>
+              </div>
+
+              <div class="contact-method-card">
+                <div class="contact-method-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                </div>
+                <div>
+                  <div class="contact-method-title">Working Hours</div>
+                  <div class="contact-method-val">Monday – Saturday</div>
+                  <div class="contact-method-sub">9:00 AM – 9:00 PM (Pakistan Standard Time)</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- What happens after -->
+            <div class="info-card">
+              <div class="info-card-title">Consultation Ke Baad Kya Hoga?</div>
+              <div class="process-steps" style="margin:0;">
+                <div class="process-step-item">
+                  <div class="pstep-num">1</div>
+                  <div class="pstep-body"><h4>Free Consultation (30 min)</h4><p>Aapki business needs aur goals discuss karte hain.</p></div>
+                </div>
+                <div class="process-step-item">
+                  <div class="pstep-num">2</div>
+                  <div class="pstep-body"><h4>Custom Proposal</h4><p>Aapke budget ke mutabiq custom strategy proposal bhejte hain.</p></div>
+                </div>
+                <div class="process-step-item">
+                  <div class="pstep-num">3</div>
+                  <div class="pstep-body"><h4>Campaign Launch</h4><p>Approval ke baad campaign setup aur launch karte hain.</p></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right: Contact Form -->
+          <div>
+            <div class="contact-form-card">
+              <h2 class="contact-form-title">Free Consultation Book Karein</h2>
+              <p class="contact-form-sub">Form fill karein aur hum 24 ghante ke andar reply karenge. Ya seedha WhatsApp pe message karein faster response ke liye.</p>
+
+              <form id="contactPageForm">
+                <div class="form-row">
+                  <div class="form-group">
+                    <label class="form-label" for="cp-name">Your Name *</label>
+                    <input type="text" id="cp-name" class="form-input" placeholder="Aapka naam" required>
+                  </div>
+                  <div class="form-group">
+                    <label class="form-label" for="cp-phone">Phone / WhatsApp *</label>
+                    <input type="tel" id="cp-phone" class="form-input" placeholder="03XXXXXXXXX" required>
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label class="form-label" for="cp-business">Business Name</label>
+                  <input type="text" id="cp-business" class="form-input" placeholder="Aapke business ka naam">
+                </div>
+
+                <div class="form-group">
+                  <label class="form-label" for="cp-service">Service Mein Interest *</label>
+                  <select id="cp-service" class="form-select form-input" required>
+                    <option value="" disabled selected>Service select karein</option>
+                    <option value="meta-ads">Meta Ads (Facebook/Instagram)</option>
+                    <option value="google-ads">Google Ads / PPC</option>
+                    <option value="web-dev">Web Development / WordPress</option>
+                    <option value="seo">SEO / Organic Ranking</option>
+                    <option value="social-media">Social Media Management</option>
+                    <option value="email-marketing">Email Marketing</option>
+                    <option value="graphic-design">Graphic Design / Branding</option>
+                    <option value="ai-video">AI Video / Content Creation</option>
+                    <option value="all">Complete Digital Marketing Package</option>
+                  </select>
+                </div>
+
+                <div class="form-group">
+                  <label class="form-label" for="cp-budget">Monthly Budget Range</label>
+                  <select id="cp-budget" class="form-select form-input">
+                    <option value="" disabled selected>Budget select karein</option>
+                    <option value="10k-20k">PKR 10,000 – 20,000</option>
+                    <option value="20k-50k">PKR 20,000 – 50,000</option>
+                    <option value="50k-100k">PKR 50,000 – 1,00,000</option>
+                    <option value="100k+">PKR 1,00,000+</option>
+                    <option value="discuss">Discuss karna hai</option>
+                  </select>
+                </div>
+
+                <div class="form-group">
+                  <label class="form-label" for="cp-message">Message / Requirements</label>
+                  <textarea id="cp-message" class="form-textarea" placeholder="Apne business goals aur requirements batayein..."></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-primary" id="cpSubmitBtn" style="padding: 12px 28px; font-size: 1rem;">
+                  <span>Send via WhatsApp</span>
+                  <svg viewBox="0 0 24 24" fill="#25D366" style="width:20px;height:20px;"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+                </button>
+              </form>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand-col">
+          <a href="index.html" class="brand-logo-link" style="margin-bottom:16px;">
+            <img src="assets/images/adwala-logo.jpg" alt="Adwala Experts Logo" class="brand-logo-img">
+            <span class="brand-logo-text">Adwala <span>Experts</span></span>
+          </a>
+          <p class="footer-desc">Digital marketing, web development, and modern technology solutions for growing businesses.</p>
+        </div>
+        <div>
+          <h4 class="footer-col-title">Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="index.html" class="footer-link">Home</a></li>
+            <li><a href="about.html" class="footer-link">About</a></li>
+            <li><a href="services.html" class="footer-link">Services</a></li>
+            <li><a href="portfolio.html" class="footer-link">Portfolio</a></li>
+            <li><a href="testimonials.html" class="footer-link">Testimonials</a></li>
+            <li><a href="contact.html" class="footer-link">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer-col-title">Services</h4>
+          <ul class="footer-links">
+            <li><a href="services.html#meta-ads" class="footer-link">Meta Ads</a></li>
+            <li><a href="services.html#google-ads" class="footer-link">Google Ads</a></li>
+            <li><a href="services.html#web-dev" class="footer-link">Web Development</a></li>
+            <li><a href="services.html#seo" class="footer-link">SEO</a></li>
+            <li><a href="services.html#social-media" class="footer-link">Social Media</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer-col-title">Social</h4>
+          <div class="social-links-strip">
+            <a href="https://www.facebook.com/adwalaexpert.pk" target="_blank" rel="noopener noreferrer" class="social-badge-btn" title="Facebook">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+              <span>Facebook</span>
+            </a>
+            <a href="https://www.instagram.com/adwalaexperts.pk" target="_blank" rel="noopener noreferrer" class="social-badge-btn" title="Instagram">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+              <span>Instagram</span>
+            </a>
+            <a href="mailto:mshafqat6552@gmail.com" class="social-badge-btn" title="Email Us">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+              <span>Email</span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p class="footer-copy">© 2026 Adwala Experts. All rights reserved.</p>
+        <p style="color: var(--text-dim); font-size: 0.82rem;">Strategy • Marketing • Technology</p>
+      </div>
+    </div>
+  </footer>
+
+  <div class="floating-contact-stack">
+    <a href="https://wa.me/923316318530" target="_blank" rel="noopener noreferrer" class="floating-contact-btn floating-whatsapp-btn" title="WhatsApp">
+      <svg class="floating-icon" viewBox="0 0 24 24"><path fill="currentColor" d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+      <span class="floating-tooltip">WhatsApp: 03316318530</span>
+    </a>
+    <a href="mailto:mshafqat6552@gmail.com" class="floating-contact-btn floating-email-btn" title="Email">
+      <svg class="floating-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+      <span class="floating-tooltip">mshafqat6552@gmail.com</span>
+    </a>
+  </div>
+
+  <script src="assets/js/main.js"></script>
+  <script>
+    // Contact Page form handler
+    const contactPageForm = document.getElementById('contactPageForm');
+    if (contactPageForm) {
+      contactPageForm.addEventListener('submit', function(e) {
+        e.preventDefault();
+        const name = document.getElementById('cp-name').value.trim();
+        const phone = document.getElementById('cp-phone').value.trim();
+        const business = document.getElementById('cp-business').value.trim();
+        const service = document.getElementById('cp-service').value;
+        const budget = document.getElementById('cp-budget').value;
+        const message = document.getElementById('cp-message').value.trim();
+        const btn = document.getElementById('cpSubmitBtn');
+
+        btn.disabled = true;
+        btn.querySelector('span').textContent = 'Sending...';
+
+        let waText = `*New Inquiry — Adwala Experts*%0A%0A`;
+        waText += `👤 *Name:* ${name}%0A`;
+        waText += `📱 *Phone:* ${phone}%0A`;
+        if (business) waText += `🏢 *Business:* ${business}%0A`;
+        if (service) waText += `🎯 *Service:* ${service}%0A`;
+        if (budget) waText += `💰 *Budget:* ${budget}%0A`;
+        if (message) waText += `📝 *Message:* ${message}`;
+
+        setTimeout(() => {
+          window.open(`https://wa.me/923316318530?text=${waText}`, '_blank');
+          btn.disabled = false;
+          btn.querySelector('span').textContent = 'Send via WhatsApp';
+        }, 800);
+      });
+    }
+  </script>
+</body>
+</html>
